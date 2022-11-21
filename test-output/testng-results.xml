@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="2" ignored="4" total="16" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Loan" duration-ms="196" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+    <groups>
+      <group name="Smoke">
+        <method signature="_02CarLoan.carLoanWebLogin()[pri:0, instance:TestNGTutorial._02CarLoan@2fd66ad3]" name="carLoanWebLogin" class="TestNGTutorial._02CarLoan"/>
+        <method signature="_01BikeLoan.bikeWebLogin(java.lang.String)[pri:0, instance:TestNGTutorial._01BikeLoan@727803de]" name="bikeWebLogin" class="TestNGTutorial._01BikeLoan"/>
+        <method signature="_02CarLoan.carLoanWebLogin()[pri:0, instance:TestNGTutorial._02CarLoan@1d7acb34]" name="carLoanWebLogin" class="TestNGTutorial._02CarLoan"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="BikeLoan" duration-ms="18" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+      <class name="TestNGTutorial._01BikeLoan">
+        <test-method status="PASS" signature="bt()[pri:0, instance:TestNGTutorial._01BikeLoan@543e710e]" name="bt" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method status="PASS" signature="at()[pri:0, instance:TestNGTutorial._01BikeLoan@543e710e]" name="at" is-config="true" duration-ms="0" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+      </class> <!-- TestNGTutorial._01BikeLoan -->
+    </test> <!-- BikeLoan -->
+    <test name="CarLoan" duration-ms="85" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+      <class name="TestNGTutorial._02CarLoan">
+        <test-method status="FAIL" signature="carLoanWebLogin()[pri:0, instance:TestNGTutorial._02CarLoan@1d7acb34]" name="carLoanWebLogin" duration-ms="12" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at TestNGTutorial._02CarLoan.carLoanWebLogin(_02CarLoan.java:16)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carLoanWebLogin -->
+      </class> <!-- TestNGTutorial._02CarLoan -->
+    </test> <!-- CarLoan -->
+    <test name="HomeLoan" duration-ms="195" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+      <class name="TestNGTutorial._02CarLoan">
+        <test-method status="PASS" signature="bs()[pri:0, instance:TestNGTutorial._02CarLoan@1d7acb34]" name="bs" is-config="true" duration-ms="12" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bs -->
+        <test-method status="PASS" signature="as(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial._02CarLoan@1d7acb34]" name="as" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suiteLevelURL.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bujji]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- as -->
+      </class> <!-- TestNGTutorial._02CarLoan -->
+      <class name="TestNGTutorial._03HomeLoan">
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="bm" is-config="true" duration-ms="4" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanMobileLogin()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="homeLoanMobileLogin" duration-ms="57" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanMobileLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="am" is-config="true" duration-ms="2" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="bm" is-config="true" duration-ms="0" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanWebLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="homeLoanWebLogin" duration-ms="3" started-at="2022-09-23T22:43:24 IST" data-provider="getData" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bujji1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanWebLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="am" is-config="true" duration-ms="0" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="bm" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanWebLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="homeLoanWebLogin" duration-ms="4" started-at="2022-09-23T22:43:24 IST" data-provider="getData" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bujjji2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanWebLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="am" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="bm" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanWebLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="homeLoanWebLogin" duration-ms="10" started-at="2022-09-23T22:43:24 IST" data-provider="getData" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bujji3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanWebLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5e57643e]" name="am" is-config="true" duration-ms="2" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+      </class> <!-- TestNGTutorial._03HomeLoan -->
+    </test> <!-- HomeLoan -->
+    <test name="packagelevel" duration-ms="172" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+      <class name="TestNGTutorial._02CarLoan">
+        <test-method status="FAIL" signature="carLoanWebLogin()[pri:0, instance:TestNGTutorial._02CarLoan@2fd66ad3]" name="carLoanWebLogin" duration-ms="18" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at TestNGTutorial._02CarLoan.carLoanWebLogin(_02CarLoan.java:16)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carLoanWebLogin -->
+        <test-method status="SKIP" signature="carLoanMobileLogin()[pri:0, instance:TestNGTutorial._02CarLoan@2fd66ad3]" name="carLoanMobileLogin" duration-ms="0" started-at="2022-09-23T22:43:24 IST" depends-on-methods="TestNGTutorial._02CarLoan.carLoanWebLogin" finished-at="2022-09-23T22:43:24 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGTutorial._02CarLoan.carLoanMobileLogin() on instance TestNGTutorial._02CarLoan@2fd66ad3 depends on not successfully finished methods 
+[TestNGTutorial._02CarLoan.carLoanWebLogin() on instance TestNGTutorial._02CarLoan@2fd66ad3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGTutorial._02CarLoan.carLoanMobileLogin() on instance TestNGTutorial._02CarLoan@2fd66ad3 depends on not successfully finished methods 
+[TestNGTutorial._02CarLoan.carLoanWebLogin() on instance TestNGTutorial._02CarLoan@2fd66ad3]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- carLoanMobileLogin -->
+      </class> <!-- TestNGTutorial._02CarLoan -->
+      <class name="TestNGTutorial._03HomeLoan">
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="bm" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanMobileLogin()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="homeLoanMobileLogin" duration-ms="8" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanMobileLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="am" is-config="true" duration-ms="0" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="bm" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanWebLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="homeLoanWebLogin" duration-ms="18" started-at="2022-09-23T22:43:24 IST" data-provider="getData" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bujji1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanWebLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="am" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="bm" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanWebLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="homeLoanWebLogin" duration-ms="3" started-at="2022-09-23T22:43:24 IST" data-provider="getData" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bujjji2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanWebLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="am" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="bm" is-config="true" duration-ms="0" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="homeLoanWebLogin(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="homeLoanWebLogin" duration-ms="3" started-at="2022-09-23T22:43:24 IST" data-provider="getData" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bujji3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoanWebLogin -->
+        <test-method status="PASS" signature="am()[pri:0, instance:TestNGTutorial._03HomeLoan@5d11346a]" name="am" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+      </class> <!-- TestNGTutorial._03HomeLoan -->
+      <class name="TestNGTutorial._01BikeLoan">
+        <test-method status="PASS" signature="bt()[pri:0, instance:TestNGTutorial._01BikeLoan@727803de]" name="bt" is-config="true" duration-ms="0" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method status="PASS" signature="bikeWebLogin(java.lang.String)[pri:0, instance:TestNGTutorial._01BikeLoan@727803de]" name="bikeWebLogin" duration-ms="9" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suiteLevelURL.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bikeWebLogin -->
+        <test-method status="PASS" signature="at()[pri:0, instance:TestNGTutorial._01BikeLoan@727803de]" name="at" is-config="true" duration-ms="1" started-at="2022-09-23T22:43:24 IST" finished-at="2022-09-23T22:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+      </class> <!-- TestNGTutorial._01BikeLoan -->
+    </test> <!-- packagelevel -->
+  </suite> <!-- Loan -->
+</testng-results>

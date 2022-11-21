@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Loan]" parallel="tests">
+  <parameter name="url" value="suiteLevelURL.com"/>
+  <parameter name="username" value="bujji"/>
+  <listeners>
+    <listener class-name="TestNGTutorial._04BasicsListeners"/>
+  </listeners>
+  <test thread-count="5" name="CarLoan(failed)" parallel="tests">
+    <classes>
+      <class name="TestNGTutorial._02CarLoan">
+        <methods>
+          <include name="as"/>
+          <include name="bs"/>
+          <include name="carLoanWebLogin"/>
+        </methods>
+      </class> <!-- TestNGTutorial._02CarLoan -->
+    </classes>
+  </test> <!-- CarLoan(failed) -->
+  <test thread-count="5" name="packagelevel(failed)" parallel="classes">
+    <parameter name="testurl" value="testlevelURL.com"/>
+    <classes>
+      <class name="TestNGTutorial._02CarLoan">
+        <methods>
+          <include name="as"/>
+          <include name="bs"/>
+          <include name="carLoanMobileLogin"/>
+          <include name="carLoanWebLogin"/>
+        </methods>
+      </class> <!-- TestNGTutorial._02CarLoan -->
+    </classes>
+  </test> <!-- packagelevel(failed) -->
+</suite> <!-- Failed suite [Loan] -->

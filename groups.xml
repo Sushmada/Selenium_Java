@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="groups">
+  <test thread-count="5" name="regression">
+    <classes>
+      <class name="TestNGTutorial._03HomeLoan"/>
+      <class name="TestNGTutorial._02CarLoan"/>
+      <class name="TestNGTutorial._01BikeLoan"/>
+    </classes>
+  </test> <!-- annotationsUsage -->
+  
+  <test name="SmokeTest">       <!-- using groups to execute only specified Tests from different classes/Tests -->
+    <groups>
+       <run>
+          <include name="Smoke"/>       <!-- also we can use exclude in order to exclude those particular TCs -->
+       </run>
+    </groups>
+    
+    <classes>
+      <class name="TestNGTutorial._03HomeLoan"/>
+      <class name="TestNGTutorial._02CarLoan"/>
+      <class name="TestNGTutorial._01BikeLoan"/>
+    </classes>
+    
+  </test>
+  
+</suite> <!-- annotations -->

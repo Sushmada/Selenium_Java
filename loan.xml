@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan" parallel="tests" thread-count="5">   <!-- executing the tests parallelly (suite level) -->
+
+<listeners>
+
+  <listener class-name="TestNGTutorial._04BasicsListeners"/>    <!-- xml file has be given with the path of the listeners class in order to excute the listeners class -->
+
+</listeners>
+
+
+<parameter name="url" value="suiteLevelURL.com"/>    <!-- declaring global level parameters(applies to all the tests in the current suite) and can be used in the following tests -->
+<parameter name="username" value="bujji"/>           <!-- declaring multiple parameters i.e., we can even define multiple parameters -->
+
+
+    <test name="packagelevel" parallel="classes" thread-count="2">       <!-- 1st TC executing all the classes at once i,e package level all the TCs in all the classes in the Package are executed -->
+                                                               <!-- parallel execution at test level, classes are executed paralelly -->
+     <parameter name="testurl" value="testlevelURL.com"/> 
+     
+      <packages>
+        <package name="TestNGTutorial"/>
+      </packages>
+    </test>
+
+    <test thread-count="5" name="BikeLoan">    <!-- 2nd TC executing only bike loan TCs -->
+      <classes>
+        <class name="TestNGTutorial._01BikeLoan">    <!-- class name shd always be defined as "pacakgename.classname" -->
+          <methods>
+            <exclude name="bike.*"/>         <!-- exculde method is used to exclude the methods within the TC and regular expression is used ".*" defines all the methods starting from bike are excluded. 
+                                                   usually the method names will the following some pattern so that it will be easy to use regular expression-->
+          </methods>
+        </class>
+      </classes>
+    </test>  
+      
+      
+    <test thread-count="5" name="CarLoan">      <!-- 3rd TC car loan -->
+      <classes>
+        <class name="TestNGTutorial._02CarLoan">
+          <methods>
+            <include name="carLoanWebLogin"/>          <!-- include method is used to include the defined methods in the Testsuit -->
+          </methods>
+        </class> 
+      </classes>
+    </test>
+    
+    
+    <test name="HomeLoan">                  <!-- 4th TC home loan -->
+    
+    <parameter name="testurl" value="testlevelURL.com"/>        <!-- defining the parameter inside the test(applies to only to the classes/methods within this test) -->
+    <parameter name="usernameTestLevel" value="bujjiTest"/>                                                           <!-- can be used only by the classes defined within this test i,e HomeLoan class -->
+      <classes>
+        <class name="TestNGTutorial._03HomeLoan"/>    <!-- if only class name is given without include or exclude, then all the methods in the class are ran -->
+      </classes>
+    </test>
+   
+</suite> 
